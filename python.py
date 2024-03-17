@@ -1,8 +1,17 @@
 tid = 0
-
+hour = 0
+min = 0
+sek = 0
 import time
 
-tid = input("hvor mye minutter")
+hour = int(input("hvor mye timer "))
+min = int(input("hvor mye minutter "))
+sek = int(input("hvor mye sekunder "))
 
-def navn(var):
-    
+def tid():
+    min = sek / 60
+    min = hour * 60
+    return min
+
+print (tid() , "min") 
+
