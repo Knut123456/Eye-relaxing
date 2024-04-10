@@ -1,8 +1,8 @@
 import time
 import os
 from playsound import playsound
-playsound ()
-windsound.playsound ("music/alarm.waw", 0)
+playsound('/Users/knroa002/Library/CloudStorage/OneDrive-Osloskolen/1ima VGS/_Personlig proskjekter/Øye avslappnings program/music/alarm.mp3')
+
 tid = 0
 hour = 0
 min = 0
