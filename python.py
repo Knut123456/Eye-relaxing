@@ -1,7 +1,5 @@
 import time
-import os
 from playsound import playsound
-playsound('/Users/knroa002/Library/CloudStorage/OneDrive-Osloskolen/1ima VGS/_Personlig proskjekter/Øye avslappnings program/music/alarm.mp3')
 
 tid = 0
 hour = 0
@@ -11,7 +9,7 @@ tidsek = 0
 tid1 = 0
 tidsek1 = 0
 
-hour = float(input("hvor mye timer "))
+hour = float(input("hvor mye timer " ))
 min = float(input("hvor mye minutter "))
 sek = float(input("hvor mye sekunder "))
 
@@ -44,15 +42,14 @@ print (tid1() , "min etter første")
 
 
 
-
-
+ 
 while True:
     time.sleep(tidsek())
-   
+    playsound('/Users/knroa002/Library/CloudStorage/OneDrive-Osloskolen/1ima VGS/_Personlig proskjekter/Øye-avslappnings-program/Alarm Clock.mp3')
     print ("tiden er nå ferdig")
-
-
-    
+    time.sleep(tidsek1())
+    playsound('/Users/knroa002/Library/CloudStorage/OneDrive-Osloskolen/1ima VGS/_Personlig proskjekter/Øye-avslappnings-program/Alarm Clock.mp30')
+    print ("ferdig med andre alarm")
 
 
 
