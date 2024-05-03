@@ -9,9 +9,11 @@ min = int(input("hvor mye minutter "))
 sek = int(input("hvor mye sekunder "))
 
 def tid():
-    min = sek / 60
-    min = hour * 60
-    return min
+    total_min = (hour * 60) + min + (sek / 60)
+    return total_min
 
-print (tid() , "min") 
+
+
+
+
 
