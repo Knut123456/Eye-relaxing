@@ -19,15 +19,6 @@ min1 = float(input("hvor mye minutter etter den første timer "))
 sek1 = float(input("hvor mye sekunder etter den første timer "))
 
 def tid():
-<<<<<<< HEAD
-    total_min = (hour * 60) + min + (sek / 60)
-    return total_min
-
-
-
-
-
-=======
     total_minutes = hour * 60 + min + sek / 60
     return total_minutes
 
@@ -62,5 +53,4 @@ while True:
 
 
 
->>>>>>> 3811cea228ed0e62fff626870a3535ba30d45279
 
