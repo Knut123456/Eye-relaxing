@@ -26,10 +26,6 @@ def tid():
     sek -= 1
     return total_min
 
-
-
-
-
 def tidsek():
     total_sek = (hour * 60 * 60) + (min * 60) + sek 
     return total_sek
@@ -57,5 +53,6 @@ while True:
     print (tid1() , "min etter første") 
     playsound('Alarm Clock.mp3')
     print ("ferdig med andre alarm")
+
 
 
