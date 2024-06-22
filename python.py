@@ -1,5 +1,7 @@
 import time
+
 from playsound import playsound
+
 
 tid = 0
 hour = 0
@@ -19,48 +21,41 @@ min1 = float(input("hvor mye minutter etter den første timer "))
 sek1 = float(input("hvor mye sekunder etter den første timer "))
 
 def tid():
-<<<<<<< HEAD
-    total_min = (hour * 60) + min + (sek / 60)
+    total_min = (hour * 60) + min + (sek / 60)    
+    time.sleep(1)
+    sek -= 1
     return total_min
 
 
 
 
 
-=======
-    total_minutes = hour * 60 + min + sek / 60
-    return total_minutes
-
-
 def tidsek():
-    total_sek = hour * 60 * 60 + min * 60 + sek 
+    total_sek = (hour * 60 * 60) + (min * 60) + sek 
     return total_sek
 
 def tid1():
-    total_minutes = hour1 * 60 + min1 + sek1 / 60
+    total_minutes = (hour1 * 60) + min1 + (sek1 / 60)
     return total_minutes
 
 def tidsek1():
-    total_sek = hour1 * 60 * 60 + min1 * 60 + sek1 
+    total_sek = (hour1 * 60 * 60) + (min1 * 60) + sek1 
     return total_sek
 
 
-print (tid() , "min") 
-print (tid1() , "min etter første") 
  
 
 
 
  
 while True:
+    print (tid() , "min") 
     time.sleep(tidsek())
-    playsound('/Users/knroa002/Library/CloudStorage/OneDrive-Osloskolen/1ima VGS/_Personlig proskjekter/Øye-avslappnings-program/Alarm Clock.mp3')
+    playsound('Alarm Clock.mp3')
     print ("tiden er nå ferdig")
     time.sleep(tidsek1())
-    playsound('/Users/knroa002/Library/CloudStorage/OneDrive-Osloskolen/1ima VGS/_Personlig proskjekter/Øye-avslappnings-program/Alarm Clock.mp30')
+    print (tid1() , "min etter første") 
+    playsound('Alarm Clock.mp3')
     print ("ferdig med andre alarm")
 
-
-
->>>>>>> 3811cea228ed0e62fff626870a3535ba30d45279
 
